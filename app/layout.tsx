@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: SITE_URL,
+    canonical: "https://sukaku-fried-chicken-kopo.vercel.app/",
   },
   robots: {
     index: true,
@@ -160,7 +160,7 @@ const restaurantSchema = {
   telephone: "+6285175348190",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Jl. Raya Nangela, Nanggung",
+    streetAddress: "M9V3+FHM, Jl. Raya Nangela, Nanggung",
     addressLocality: "Kecamatan Kopo",
     addressRegion: "Kabupaten Serang, Banten",
     postalCode: "42178",

@@ -1,15 +1,12 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://sukaku-fried-chicken-kopo.vercel.app";
-  const now = new Date();
-
   return [
     {
-      url: baseUrl,
-      lastModified: now,
+      url: "https://sukaku-fried-chicken-kopo.vercel.app/",
+      lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 1.0,
+      priority: 1,
     },
   ];
 }
