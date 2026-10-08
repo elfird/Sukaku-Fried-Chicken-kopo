@@ -57,7 +57,7 @@ export default function MenuCatalog() {
             Menu Lengkap & Menggugah Selera
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-[#8B0000] uppercase tracking-tight">
-            Pilihan Menu Sukaku Fried Chicken
+            Menu Sukaku Fried Chicken
           </h2>
           <p className="text-neutral-600 font-medium text-sm sm:text-base mt-2">
             Dari paket hemat kenyang, ayam crispy renyah satuan, geprek lava keju pedas, hingga snack kriuk dan es teh manis segar.
@@ -139,7 +139,7 @@ export default function MenuCatalog() {
                 <div className="relative w-full h-48 bg-neutral-100 overflow-hidden">
                   <Image
                     src={item.image}
-                    alt={item.name}
+                    alt={`${item.name} - Sukaku Fried Chicken ayam crispy Kopo`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

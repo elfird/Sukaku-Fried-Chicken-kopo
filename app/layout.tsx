@@ -23,17 +23,17 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-const SITE_URL = "https://sukakufriedchicken.com";
+const SITE_URL = "https://sukaku-fried-chicken-kopo.vercel.app";
 const SITE_NAME = "Sukaku Fried Chicken";
-const SITE_TITLE = "Sukaku Fried Chicken Kopo Serang - Ayam Goreng Crispy Renyah | Pasti Suka!";
+const SITE_TITLE = "Sukaku Fried Chicken Kopo | Ayam Crispy & Ayam Goreng di Serang";
 const SITE_DESC =
-  "Sukaku Fried Chicken di Jl. Raya Nangela, Kec. Kopo, Kabupaten Serang, Banten 42178. Ayam goreng crispy keemasan bumbu rempah meresap sampai ke tulang. Buka setiap hari 09:00–21:00 WIB. Pesan langsung via WhatsApp 0851-7534-8190. Halal & Higienis!";
+  "Sukaku Fried Chicken Kopo menyajikan ayam crispy & ayam goreng renyah bumbu meresap di Kopo, Kabupaten Serang, Banten. Buka setiap hari, pesan via WhatsApp.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: `%s | ${SITE_NAME}`,
+    template: `%s | ${SITE_NAME} Kopo`,
   },
   description: SITE_DESC,
   keywords: [
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
     creator: "@sukakufriedchicken",
   },
   verification: {
-    google: "google7bf2dc8f7e99464d",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "google7bf2dc8f7e99464d",
   },
   other: {
     "geo.region": "ID-BT",
@@ -229,20 +229,26 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Menu Kami",
+      name: "Menu Sukaku Fried Chicken",
       item: `${SITE_URL}/#menu`,
     },
     {
       "@type": "ListItem",
       position: 3,
-      name: "Promo",
-      item: `${SITE_URL}/#promo`,
+      name: "Kenapa Pilih Sukaku?",
+      item: `${SITE_URL}/#keunggulan`,
     },
     {
       "@type": "ListItem",
       position: 4,
-      name: "Cara Pesan",
-      item: `${SITE_URL}/#delivery`,
+      name: "Lokasi dan Jam Operasional",
+      item: `${SITE_URL}/#lokasi`,
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      name: "FAQ Sukaku Fried Chicken",
+      item: `${SITE_URL}/#faq`,
     },
   ],
 };
@@ -257,23 +263,31 @@ const faqSchema = {
       name: "Di mana lokasi Sukaku Fried Chicken?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sukaku Fried Chicken berlokasi di Jl. Raya Nangela, Nanggung, Kecamatan Kopo, Kabupaten Serang, Banten 42178. Anda bisa lihat di Google Maps: https://maps.app.goo.gl/8WUy1RHQPgeSSPVa9",
+        text: "Sukaku Fried Chicken berlokasi di Jl. Raya Nangela, Nanggung, Kecamatan Kopo, Kabupaten Serang, Banten 42178.",
       },
     },
     {
       "@type": "Question",
-      name: "Jam buka Sukaku Fried Chicken?",
+      name: "Apakah Sukaku menyediakan ayam crispy?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sukaku Fried Chicken buka setiap hari Senin hingga Minggu dari pukul 09:00 hingga 21:00 WIB.",
+        text: "Ya. Sukaku Fried Chicken menyediakan berbagai pilihan menu ayam crispy, ayam goreng keemasan, geprek lava keju, hingga aneka snack pelengkap.",
       },
     },
     {
       "@type": "Question",
-      name: "Bagaimana cara pesan di Sukaku Fried Chicken?",
+      name: "Bagaimana cara memesan Sukaku Fried Chicken?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pesan bisa dilakukan langsung via WhatsApp ke nomor 0851-7534-8190. Sebutkan menu yang diinginkan, jumlah, dan alamat jika pesan delivery. Pesanan langsung diproses!",
+        text: "Untuk informasi menu dan pemesanan, pelanggan dapat menghubungi Sukaku Fried Chicken melalui WhatsApp yang tersedia di website (0851-7534-8190).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Berapa jam operasional Sukaku Fried Chicken Kopo?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sukaku Fried Chicken buka setiap hari dari Senin hingga Minggu, mulai pukul 09:00 hingga 21:00 WIB.",
       },
     },
     {
@@ -281,23 +295,15 @@ const faqSchema = {
       name: "Berapa harga menu di Sukaku Fried Chicken?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Harga menu Sukaku Fried Chicken mulai dari Rp 10.000 hingga Rp 65.000. Ada paket super hemat Ayam + Nasi + Es Teh mulai Rp 15.000!",
+        text: "Harga menu sangat terjangkau mulai dari Rp 10.000 hingga Rp 65.000, dengan paket hemat ayam crispy + nasi + es teh mulai Rp 15.000.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah Sukaku Fried Chicken halal?",
+      name: "Apakah menu Sukaku Fried Chicken terjamin halal?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya, Sukaku Fried Chicken 100% Halal. Menggunakan ayam potong segar pilihan yang higienis dengan proses penyembelihan sesuai syariat Islam.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Apakah ada layanan delivery di Sukaku Fried Chicken?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Ya, tersedia layanan delivery. Hubungi kami via WhatsApp di 0851-7534-8190 untuk pemesanan delivery ke alamat Anda.",
+        text: "Ya, Sukaku Fried Chicken 100% Halal dan higienis. Menggunakan daging ayam potong segar harian dan diproses secara bersih.",
       },
     },
   ],

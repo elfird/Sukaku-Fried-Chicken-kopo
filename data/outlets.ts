@@ -15,7 +15,7 @@ export interface Outlet {
 export const STORE: Outlet = {
   id: "sukaku-kopo-serang",
   name: "Sukaku Fried Chicken",
-  address: "Jl. Raya Nangela, Nanggung, Kec. Kopo, Kabupaten Serang, Banten 42178",
+  address: "Jl. Raya Nangela, Nanggung, Kecamatan Kopo, Kabupaten Serang, Banten 42178",
   hours: "09:00 - 21:00 WIB",
   phone: "0851-7534-8190",
   whatsapp: "6285175348190",

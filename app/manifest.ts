@@ -2,10 +2,10 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Sukaku Fried Chicken - Pasti Suka!",
-    short_name: "Sukaku FC",
+    name: "Sukaku Fried Chicken Kopo",
+    short_name: "Sukaku Kopo",
     description:
-      "Ayam Goreng Crispy Renyah di Jl. Raya Nangela, Nanggung, Kec. Kopo, Kabupaten Serang, Banten 42178. Pesan via WhatsApp 0851-7534-8190.",
+      "Ayam Crispy dan Ayam Goreng Favorit di Jl. Raya Nangela, Nanggung, Kecamatan Kopo, Kabupaten Serang, Banten 42178. Pesan via WhatsApp.",
     start_url: "/",
     display: "standalone",
     background_color: "#FAF7F2",

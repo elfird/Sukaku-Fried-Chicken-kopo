@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://sukakufriedchicken.com";
+  const baseUrl = "https://sukaku-fried-chicken-kopo.vercel.app";
   const now = new Date();
 
   return [

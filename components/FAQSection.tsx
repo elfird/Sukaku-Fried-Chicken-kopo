@@ -13,40 +13,40 @@ const FAQS: FAQItem[] = [
   {
     question: "Di mana lokasi Sukaku Fried Chicken?",
     answer:
-      "Sukaku Fried Chicken berlokasi di Jl. Raya Nangela, Nanggung, Kecamatan Kopo, Kabupaten Serang, Banten 42178 (Plus Code: M9V3+FHM). Lokasi strategis dan mudah diakses kendaraan roda dua maupun roda empat.",
+      "Sukaku Fried Chicken berlokasi di Jl. Raya Nangela, Nanggung, Kecamatan Kopo, Kabupaten Serang, Banten 42178. Lokasi strategis dan mudah diakses kendaraan.",
     link: {
       text: "Buka Petunjuk Arah Google Maps",
       url: "https://maps.app.goo.gl/8WUy1RHQPgeSSPVa9",
     },
   },
   {
-    question: "Jam buka Sukaku Fried Chicken?",
+    question: "Apakah Sukaku menyediakan ayam crispy?",
     answer:
-      "Sukaku Fried Chicken buka setiap hari dari hari Senin hingga Minggu, mulai pukul 09:00 hingga 21:00 WIB (total 12 jam per hari). Kami siap menyajikan ayam goreng lezat setiap waktu makan siang, sore, hingga makan malam Anda.",
+      "Ya. Sukaku Fried Chicken menyediakan berbagai pilihan menu ayam crispy, ayam goreng keemasan, geprek lava keju, hingga aneka snack pelengkap.",
   },
   {
-    question: "Bagaimana cara pesan di Sukaku Fried Chicken?",
+    question: "Bagaimana cara memesan Sukaku Fried Chicken?",
     answer:
-      "Pemesanan sangat praktis, langsung melalui WhatsApp di nomor 0851-7534-8190. Anda cukup memilih menu yang diinginkan lewat website ini atau chat langsung, tentukan jumlah pesanan dan alamat (jika pesan delivery), pesanan Anda akan langsung diproses oleh dapur kami.",
+      "Untuk informasi menu dan pemesanan, pelanggan dapat menghubungi Sukaku Fried Chicken melalui WhatsApp yang tersedia di website.",
     link: {
       text: "Chat WhatsApp Sekarang (0851-7534-8190)",
       url: "https://wa.me/6285175348190?text=Halo%20Sukaku%20Fried%20Chicken!%20Saya%20mau%20pesan.",
     },
   },
   {
+    question: "Jam buka Sukaku Fried Chicken?",
+    answer:
+      "Sukaku Fried Chicken buka setiap hari dari hari Senin hingga Minggu, mulai pukul 09:00 hingga 21:00 WIB.",
+  },
+  {
     question: "Berapa harga menu di Sukaku Fried Chicken?",
     answer:
-      "Harga menu Sukaku Fried Chicken sangat terjangkau mulai dari Rp 10.000 hingga Rp 65.000. Tersedia Paket Super Hemat (Ayam + Nasi + Es Teh) hanya Rp 15.000, serta paket pesta keluarga dan aneka camilan lezat seperti Burger Crispy dan Kentang Goreng.",
+      "Harga menu Sukaku Fried Chicken sangat terjangkau mulai dari Rp 10.000 hingga Rp 65.000. Tersedia Paket Super Hemat (Ayam + Nasi + Es Teh) hanya Rp 15.000!",
   },
   {
     question: "Apakah Sukaku Fried Chicken 100% Halal?",
     answer:
-      "Ya, Sukaku Fried Chicken 100% Halal dan Higienis. Kami hanya menggunakan bahan baku daging ayam segar pilihan yang dipotong sesuai syariat Islam, dimarinasi dengan bumbu rempah pilihan, serta digoreng dengan minyak nabati berkualitas yang selalu terjaga kebersihannya.",
-  },
-  {
-    question: "Apakah tersedia layanan delivery?",
-    answer:
-      "Ya, kami melayani delivery untuk area sekitar Kopo dan sekitarnya. Hubungi kami langsung melalui WhatsApp untuk konfirmasi ongkos kirim dan estimasi waktu pengantaran.",
+      "Ya, Sukaku Fried Chicken 100% Halal dan Higienis. Menggunakan daging ayam segar harian yang dipotong sesuai syariat Islam dan diproses secara bersih.",
   },
 ];
 
@@ -68,8 +68,7 @@ export default function FAQSection() {
             Pertanyaan Umum (FAQ)
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-[#1F110B] uppercase tracking-tight leading-tight mb-3">
-            Pertanyaan yang <br />
-            <span className="text-[#D32F2F]">Sering Ditanyakan</span>
+            FAQ Sukaku Fried Chicken
           </h2>
           <p className="text-neutral-600 font-medium text-sm sm:text-base">
             Temukan jawaban cepat seputar lokasi, menu, jam operasional, dan cara pemesanan Sukaku Fried Chicken.

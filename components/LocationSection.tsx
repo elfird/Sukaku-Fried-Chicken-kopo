@@ -32,8 +32,7 @@ export default function LocationSection() {
             Lokasi & Jam Operasional
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-[#1F110B] uppercase tracking-tight leading-tight mb-3">
-            Kunjungi Outlet <br />
-            <span className="text-[#D32F2F]">Sukaku Fried Chicken</span>
+            Lokasi dan Jam Operasional
           </h2>
           <p className="text-neutral-600 font-medium text-sm sm:text-base">
             Nikmati aroma gurih dan kerenyahan ayam goreng panas langsung dari penggorengan kami di Kopo, Serang, Banten.
@@ -73,7 +72,7 @@ export default function LocationSection() {
                       Alamat Lengkap
                     </p>
                     <p className="text-sm sm:text-base font-bold text-neutral-800 leading-snug mt-0.5">
-                      Jl. Raya Nangela, Nanggung, Kec. Kopo, Kabupaten Serang, Banten 42178
+                      Jl. Raya Nangela, Nanggung, Kecamatan Kopo, Kabupaten Serang, Banten 42178
                     </p>
                     <p className="text-xs text-neutral-500 mt-1 font-mono bg-white px-2 py-0.5 rounded border border-neutral-200 inline-block">
                       Plus Code: <strong className="text-neutral-800">M9V3+FHM</strong>

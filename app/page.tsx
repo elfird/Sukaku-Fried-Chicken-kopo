@@ -5,6 +5,7 @@ import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MenuCatalog from "@/components/MenuCatalog";
+import LocalSEOSection from "@/components/LocalSEOSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import DeliveryPartners from "@/components/DeliveryPartners";
 import LocationSection from "@/components/LocationSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <MenuCatalog />
+        <LocalSEOSection />
         <WhyChooseUs />
         <DeliveryPartners />
         <LocationSection />

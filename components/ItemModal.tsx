@@ -57,7 +57,7 @@ export default function ItemModal({ item, onClose }: ItemModalProps) {
         <div className="relative w-full h-52 sm:h-60 bg-neutral-900 shrink-0">
           <Image
             src={item.image}
-            alt={item.name}
+            alt={`${item.name} - Sukaku Fried Chicken ayam crispy Kopo`}
             fill
             className="object-cover"
           />

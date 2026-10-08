@@ -20,9 +20,9 @@ export default function Testimonials() {
               <MessageCircleHeart className="w-3.5 h-3.5 fill-current text-[#FFD500]" />
               Kata Pencinta Kuliner
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-[#8B0000] uppercase tracking-tight">
+            <h3 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-[#8B0000] uppercase tracking-tight">
               Apa Kata Mereka Tentang Sukaku?
-            </h2>
+            </h3>
             <p className="text-neutral-700 font-medium text-sm sm:text-base mt-2">
               Ulasan jujur dari pelanggan setia Sukaku Fried Chicken di berbagai kota.
             </p>

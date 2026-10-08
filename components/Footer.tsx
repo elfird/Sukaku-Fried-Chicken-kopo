@@ -122,7 +122,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-[#FFD500] transition-colors"
                 >
-                  Jl. Raya Nangela, Nanggung, Kec. Kopo,<br />
+                  Jl. Raya Nangela, Nanggung, Kecamatan Kopo,<br />
                   Kabupaten Serang, Banten 42178
                 </a>
               </p>

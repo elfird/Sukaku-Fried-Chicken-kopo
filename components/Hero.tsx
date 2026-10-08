@@ -32,17 +32,18 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Main Headline with Playful Comic Font */}
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black uppercase tracking-tight text-white leading-[1.08] mb-4 text-shadow-red">
-              Nikmati Lezatnya{" "}
-              <span className="text-[#FFD500] block text-shadow-yellow underline decoration-wavy decoration-[#FF9800]">
-                Sukaku Fried Chicken!
-              </span>
+            {/* Main Headline with H1 and Subtitle */}
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black uppercase tracking-tight text-white leading-[1.08] mb-3 text-shadow-red">
+              Sukaku Fried Chicken <span className="text-[#FFD500]">Kopo</span>
             </h1>
 
+            <p className="font-display text-xl sm:text-2xl md:text-3xl font-black text-[#FFD500] mb-4 text-shadow-yellow tracking-tight">
+              Ayam Crispy dan Ayam Goreng Favorit di Kopo, Serang
+            </p>
+
             {/* Sub-headline with High-Contrast Text */}
-            <p className="font-sans text-base sm:text-lg md:text-xl text-amber-50 font-medium max-w-2xl mb-8 leading-relaxed drop-shadow-sm">
-              🍗 <strong className="text-white font-bold">Crispy di Luar, Juicy di Dalam!</strong> Daging ayam segar pilihan dengan racikan bumbu rempah rahasia yang meresap sampai ke tulang. Digoreng dengan deep fryer modern minyak selalu jernih keemasan.
+            <p className="font-sans text-base sm:text-lg text-amber-50 font-medium max-w-2xl mb-8 leading-relaxed drop-shadow-sm">
+              🍗 <strong className="text-white font-bold">Crispy di Luar, Juicy di Dalam!</strong> Daging ayam segar pilihan dengan racikan bumbu rempah khas yang meresap sampai ke tulang. Digoreng keemasan dengan standar higienis dan 100% Halal untuk santapan Anda dan keluarga.
             </p>
 
             {/* CTA Buttons Group */}
@@ -151,9 +152,18 @@ export default function Hero() {
 
         </div>
 
-        {/* Value Highlights Ticker / Feature Strip */}
-        <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 bg-black/25 backdrop-blur-md p-4 sm:p-5 rounded-3xl border border-white/20 shadow-xl">
-          <div className="flex items-center gap-3 p-2">
+        {/* Value Highlights Ticker with H2 Tentang Sukaku Fried Chicken */}
+        <div className="mt-12 md:mt-16 bg-black/25 backdrop-blur-md p-5 sm:p-7 rounded-3xl border border-white/20 shadow-xl">
+          <div className="text-center max-w-2xl mx-auto mb-6">
+            <h2 className="font-display font-black text-xl sm:text-2xl uppercase tracking-wide text-[#FFD500] mb-2">
+              Tentang Sukaku Fried Chicken
+            </h2>
+            <p className="text-xs sm:text-sm text-amber-100 font-medium">
+              Sukaku Fried Chicken hadir sebagai pilihan kuliner ayam goreng renyah berkualitas di Kopo, Serang. Mengutamakan bahan baku segar, resep rempah khas, dan kebersihan prima demi kepuasan setiap pelanggan.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            <div className="flex items-center gap-3 p-2">
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-[#FFD500] text-[#8B0000] flex items-center justify-center shrink-0 shadow-md font-bold text-lg">
               🍗
             </div>
@@ -192,6 +202,7 @@ export default function Hero() {
               <p className="text-xs text-amber-200">Langsung via WhatsApp</p>
             </div>
           </div>
+        </div>
         </div>
 
       </div>

@@ -63,10 +63,10 @@ export default function DeliveryPartners() {
             <MessageCircle className="w-3.5 h-3.5" />
             Cara Pesan
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight leading-tight mb-3">
+          <h3 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight leading-tight mb-3">
             Pesan Mudah <br />
             <span className="text-[#FFD500]">Langsung via WhatsApp</span>
-          </h2>
+          </h3>
           <p className="text-amber-100/90 font-medium text-sm sm:text-base">
             Tidak perlu aplikasi lain. Cukup chat WhatsApp kami dan pesanan Anda langsung diproses!
           </p>

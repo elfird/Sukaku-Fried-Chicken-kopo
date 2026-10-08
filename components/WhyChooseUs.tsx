@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
             Keunggulan Sukaku Fried Chicken
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-[#8B0000] uppercase tracking-tight">
-            Kenapa Harus Sukaku Fried Chicken?
+            Kenapa Pilih Sukaku?
           </h2>
           <p className="text-neutral-700 font-medium text-sm sm:text-base mt-2">
             Komitmen kami menghadirkan ayam goreng terenak, paling renyah, dan paling higienis untuk keluarga Indonesia.
