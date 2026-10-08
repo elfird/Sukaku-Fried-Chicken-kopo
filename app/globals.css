@@ -1,26 +1,149 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-fredoka: var(--font-fredoka, "Fredoka", cursive, sans-serif);
+  --font-jakarta: var(--font-jakarta, "Plus Jakarta Sans", sans-serif);
+  
+  --color-primary-red: #D32F2F;
+  --color-dark-red: #B71C1C;
+  --color-deep-red: #8B0000;
+  --color-brand-yellow: #FFD500;
+  --color-bright-yellow: #FFC107;
+  --color-brand-orange: #FF9800;
+  --color-brand-cream: #FFF9EE;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-display: var(--font-fredoka);
+  --font-sans: var(--font-jakarta);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom comic & playful typography */
+.font-display {
+  font-family: var(--font-fredoka);
+}
+
+.font-sans {
+  font-family: var(--font-jakarta);
+}
+
+/* Text Stroke utilities */
+.text-stroke-sm {
+  -webkit-text-stroke: 1.5px #B71C1C;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1.5px #FFFFFF;
+}
+
+.text-stroke-thick {
+  -webkit-text-stroke: 2.5px #8B0000;
+  text-shadow: 0 3px 0 #4a0000, 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.text-shadow-pop {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-red {
+  text-shadow: 0 2px 0 #900000, 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-yellow {
+  text-shadow: 0 2px 0 #b28900;
+}
+
+/* Halftone / Dot pattern background */
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+.bg-dots-pattern-red {
+  background-image: radial-gradient(rgba(211, 47, 47, 0.12) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.bg-comic-burst {
+  background: radial-gradient(circle at center, #E50914 0%, #B71C1C 60%, #800000 100%);
+}
+
+/* Playful Card Shadow */
+.card-shadow-pop {
+  box-shadow: 0 8px 0px rgba(0, 0, 0, 0.08), 0 16px 24px -6px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-shadow-pop:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 0px rgba(0, 0, 0, 0.08), 0 24px 30px -6px rgba(0, 0, 0, 0.18);
+}
+
+.button-press-effect {
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-press-effect:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Glowing Animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 213, 0, 0.6), 0 0 30px rgba(255, 152, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 213, 0, 0.9), 0 0 50px rgba(255, 152, 0, 0.5);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-glow {
+  animation: pulse-glow 2.5s infinite;
 }
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+@keyframes badge-bounce {
+  0%, 100% {
+    transform: scale(1) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(1deg);
+  }
+}
+
+.animate-badge {
+  animation: badge-bounce 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF9EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E50914;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B71C1C;
+}
+
