@@ -19,9 +19,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks: { name: string; href: string; badge?: string }[] = [
     { name: "Pilihan Menu", href: "#menu" },
-    { name: "Promo", href: "#promo", badge: "HOT" },
     { name: "Keunggulan", href: "#keunggulan" },
     { name: "Cara Pesan", href: "#delivery" },
     { name: "Lokasi & Jam", href: "#lokasi" },
@@ -34,8 +33,8 @@ export default function Navbar() {
       <div className="bg-[#B71C1C] text-[#FFF9EE] py-1.5 px-4 text-xs md:text-sm font-medium">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 overflow-hidden whitespace-nowrap">
-            <span className="bg-[#FFD500] text-[#8B0000] px-2 py-0.5 rounded-full font-bold text-[10px] md:text-xs uppercase flex items-center gap-1 shrink-0 animate-pulse">
-              <Flame className="w-3 h-3 fill-current" /> Promo Spesial
+            <span className="bg-[#FFD500] text-[#8B0000] px-2 py-0.5 rounded-full font-bold text-[10px] md:text-xs uppercase flex items-center gap-1 shrink-0">
+              <Flame className="w-3 h-3 fill-current" /> Favorit
             </span>
             <span className="truncate">
               🍗 <strong>Paket Super Hemat</strong> Ayam + Nasi + Es Teh Cuma <strong>Rp 15.000!</strong>

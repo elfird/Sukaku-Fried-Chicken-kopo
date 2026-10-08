@@ -4,7 +4,6 @@ import React from "react";
 import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import PromoSection from "@/components/PromoSection";
 import MenuCatalog from "@/components/MenuCatalog";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import DeliveryPartners from "@/components/DeliveryPartners";
@@ -21,7 +20,6 @@ export default function Home() {
       <main className="min-h-screen flex flex-col bg-[#FAF7F2]">
         <Navbar />
         <Hero />
-        <PromoSection />
         <MenuCatalog />
         <WhyChooseUs />
         <DeliveryPartners />

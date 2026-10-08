@@ -56,13 +56,13 @@ export default function Hero() {
                 <span>Pilih Menu & Pesan Sekarang</span>
               </button>
 
-              {/* Promo Section CTA Button */}
+              {/* Catalog CTA Button */}
               <a
-                href="#promo"
+                href="#menu"
                 className="px-6 py-4 rounded-2xl font-display font-bold text-base md:text-lg bg-black/25 hover:bg-black/40 text-white border-2 border-white/40 backdrop-blur-sm transition-all flex items-center justify-center gap-2.5 button-press-effect shadow-md"
               >
                 <Flame className="w-5 h-5 text-[#FFD500]" />
-                <span>Lihat Promo Spesial</span>
+                <span>Lihat Menu Lengkap</span>
               </a>
             </div>
 

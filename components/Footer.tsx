@@ -70,11 +70,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#promo" className="hover:text-[#FFD500] transition-colors flex items-center gap-1.5">
-                  <span>🔥</span> Promo Spesial Hari Ini
-                </a>
-              </li>
-              <li>
                 <a href="#keunggulan" className="hover:text-[#FFD500] transition-colors flex items-center gap-1.5">
                   <span>✨</span> Keunggulan Rasa
                 </a>
