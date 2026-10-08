@@ -115,8 +115,7 @@ export const metadata: Metadata = {
     creator: "@sukakufriedchicken",
   },
   verification: {
-    // Tambahkan kode verifikasi Google Search Console saat domain aktif
-    // google: "YOUR_GOOGLE_SEARCH_CONSOLE_CODE",
+    google: "google7bf2dc8f7e99464d",
   },
   other: {
     "geo.region": "ID-BT",
