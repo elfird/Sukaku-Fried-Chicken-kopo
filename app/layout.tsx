@@ -115,7 +115,7 @@ export const metadata: Metadata = {
     creator: "@sukakufriedchicken",
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "google7bf2dc8f7e99464d",
+    google: "drAE4rf_YSn2lDW4XVETL91SP562dTWKdVMi0JeRXnM",
   },
   other: {
     "geo.region": "ID-BT",
