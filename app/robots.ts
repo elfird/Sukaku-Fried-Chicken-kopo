@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://sukaku-fried-chicken-kopo.vercel.app/sitemap.xml",
+    sitemap: "https://www.ayamgorengterdekat.web.id/sitemap.xml",
   };
 }

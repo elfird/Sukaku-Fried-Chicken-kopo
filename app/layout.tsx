@@ -23,7 +23,7 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-const SITE_URL = "https://sukaku-fried-chicken-kopo.vercel.app";
+const SITE_URL = "https://www.ayamgorengterdekat.web.id";
 const SITE_NAME = "Sukaku Fried Chicken";
 const SITE_TITLE = "Sukaku Fried Chicken Kopo | Ayam Crispy & Ayam Goreng di Serang";
 const SITE_DESC =
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: "https://sukaku-fried-chicken-kopo.vercel.app/",
+    canonical: "https://www.ayamgorengterdekat.web.id/",
   },
   robots: {
     index: true,
